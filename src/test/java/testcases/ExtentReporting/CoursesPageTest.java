@@ -36,7 +36,7 @@ public class CoursesPageTest extends Base {
 		Assert.assertEquals(title,"Rahul Shetty Academy1");
 	}
 	
-	//@Test(priority=2)
+	@Test(priority=2)
 	public void validateCoursesCount() {
 		int noOfCourses = driver.findElements(By.xpath("//div[@class='course-listing']")).size();
 		Assert.assertEquals(21, noOfCourses);

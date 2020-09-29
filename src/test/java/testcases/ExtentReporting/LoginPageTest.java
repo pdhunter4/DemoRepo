@@ -32,7 +32,7 @@ public class LoginPageTest extends Base{
 		Assert.assertEquals(title,"Rahul Shetty Academy");
 	}
 	
-	//@Test(priority=2,dataProvider="loginData")
+	@Test(priority=2,dataProvider="loginData")
 	public void loginTest(String username,String password) {
 		driver.findElement(By.id("user_email")).sendKeys(username);
 		driver.findElement(By.id("user_password")).sendKeys(password);
